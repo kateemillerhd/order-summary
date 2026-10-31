@@ -27,7 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/mobile_ss.png)
+![](./images/desktop_ss.png)
+![](./images/active_ss.png)
 
 
 ### Links
@@ -42,7 +44,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 
