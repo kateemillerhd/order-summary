@@ -179,8 +179,17 @@ button {
     }
     
     .card-container {
-        width: 30%;
+        width: 40%;
         max-width: 420px;
+    }
+
+    .description {
+        padding-inline: 2rem;
+    }
+
+    .plan {
+        padding-block: 1rem;
+        width: 80%;
     }
 
     .left {
@@ -193,6 +202,10 @@ button {
     }
 
     a {
-        margin-inline-end: 20px;
+        margin-inline-end: 15px;
+    }
+
+    .payment {
+        width: 80%;
     }
 }
