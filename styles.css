@@ -25,7 +25,33 @@ body {
 
     background-image: url("./images/pattern-background-mobile.svg");
     background-repeat: no-repeat;
+}
 
+h1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--blue950);
+}
+
+a {
+    font-weight: 900;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: hwb(246 40% 22%);
+}
+
+button {
+    padding: 18px;
+    font-family: var(--redhat);
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 14px;
+
+    border: none;
 }
 
 .card-container {
@@ -59,12 +85,6 @@ body {
     font-family: var(--redhat);
 }
 
-h1 {
-    font-size: 20px;
-    font-weight: 900;
-    color: var(--blue950);
-}
-
 .description {
     padding-inline: 1.6rem;
     line-height: 1.6;
@@ -89,6 +109,11 @@ h1 {
     padding: 15px;
 }
 
+.left {
+    display: flex;
+    align-items: center;
+}
+
 .plan-price {
     display: flex;
     flex-direction: column;
@@ -108,11 +133,6 @@ h1 {
     font-weight: 700;
 }
 
-a {
-    font-weight: 900;
-    font-size: 14px;
-}
-
 .payment {
     width: 90%;
     display: flex;
@@ -122,21 +142,16 @@ a {
     margin-block: 1.5rem;
 }
 
-button {
-    padding: 18px;
-    font-family: var(--redhat);
-    font-size: 16px;
-    font-weight: 900;
-    border-radius: 14px;
-
-    border: none;
-}
-
 .payment-btn {
     background-color: var(--blue700);
     color: var(--blue100);
 
     box-shadow: 5px 5px 20px 10px hwb(228 85% 11%);
+}
+
+.payment-btn:hover {
+    background-color: hwb(246 40% 22%);
+    cursor: pointer;
 }
 
 .cancel {
@@ -145,7 +160,7 @@ button {
     color: var(--gray600);
     font-weight: 900;
     text-align: center;
-    margin-block: 1.2rem; 
+    margin-block: 1rem; 
 }
 
 .cancel:hover {
@@ -153,13 +168,26 @@ button {
     cursor: pointer;
 }
 
-.payment-btn:hover {
-    background-color: hwb(246 40% 22%);
-    cursor: pointer;
-}
+@media (min-width: 770px) {
+    body {
+        width: 100vw;
+    }
+    
+    .card-container {
+        width: 30%;
+        max-width: 420px;
+    }
 
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-    color: hwb(246 40% 22%);
+    .left {
+        display: flex;
+        align-items: center;
+    }
+
+    .plan {
+        justify-content: space-between;
+    }
+
+    a {
+        margin-inline-end: 20px;
+    }
 }
