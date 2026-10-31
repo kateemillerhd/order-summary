@@ -8,3 +8,142 @@
     --blue950: hsl(223, 47%, 23%);
     --redhat: "Red Hat Display", sans-serif;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--blue100);
+
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 85%;
+    height: auto;
+
+    background-color: white;
+    border-radius: 14px;
+}
+
+.img-container {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    border-radius: 14px 14px 0 0;
+}
+
+.heading {
+    margin-block-start: 1rem;
+    text-align: center;
+    font-family: var(--redhat);
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--blue950);
+}
+
+.description {
+    padding-inline: 1.6rem;
+    line-height: 1.6;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    
+    color: var(--gray600);
+    font-weight: 700;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    background-color: var(--blue50);
+    border-radius: 10px;
+
+    font-family: var(--redhat);
+}
+
+.plan-img {
+    padding: 15px;
+}
+
+.plan-price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-inline-start: 5px;
+    margin-inline-end: 3rem;
+}
+
+.plan-name {
+    color: var(--blue950);
+    font-weight: 900;
+    padding-block-start: 5px;
+}
+
+.price {
+    color: var(--gray600);
+    font-weight: 700;
+}
+
+a {
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.payment {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    margin-block: 1.5rem;
+}
+
+button {
+    padding: 18px;
+    font-family: var(--redhat);
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 14px;
+
+    border: none;
+}
+
+.payment-btn {
+    background-color: var(--blue700);
+    color: var(--blue100);
+
+    box-shadow: 5px 5px 20px 10px hwb(228 85% 11%);
+}
+
+.cancel {
+    font-family: var(--redhat);
+    background-color: white;
+    color: var(--gray600);
+    font-weight: 900;
+    text-align: center;
+    margin-block: 1.2rem; 
+}
